@@ -49,7 +49,11 @@
     <td><%= a_movie.title %></td>
     <td><%= a_movie.year %></td>
     <td><%= @the_director.name %></td>
-    <td>Show details</td>
+    <td>
+      <a href="/movies/<%= a_movie.id %>">
+        Show details
+      </a>
+    </td>
   </tr>
 <% end %>
 
